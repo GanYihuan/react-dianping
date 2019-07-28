@@ -1,5 +1,5 @@
 {
-  "name": "dianping-webapp",
+  "name": "react-dianping",
   "version": "0.1.0",
   "private": true,
   "homepage": "http://localhost:8000",
@@ -68,7 +68,7 @@
     "workbox-webpack-plugin": "4.2.0"
   },
   "scripts": {
-    "start": "node scripts/start.js",
+    "start": "PORT=8044 node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
     "predeploy": "yarn run build",
