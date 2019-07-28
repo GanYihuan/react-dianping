@@ -12,7 +12,6 @@ class ProductDetail extends Component {
     shouldComponentUpdate(nextProps, nextState) {
         return true
     }
-    
     render() {
         const { product, relatedShop } = this.props
 

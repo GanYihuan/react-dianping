@@ -24,13 +24,13 @@ class App extends Component {
             <div className="App">
                 <Router basename="/dianping">
                     <Switch>
+                        <Route path="/" component={Home} />
                         <Route path="/login" component={Login} />
-                        <PrivateRoute path="/user" component={User} />
                         <Route path="/detail/:id" component={ProductDetail} />
                         <Route path="/search" component={Search} />
-                        <PrivateRoute path="/purchase/:id" component={Purchase} />
                         <Route path="/search_result" component={SearchResult} />
-                        <Route path="/" component={Home} />
+                        <PrivateRoute path="/user" component={User} />
+                        <PrivateRoute path="/purchase/:id" component={Purchase} />
                     </Switch>
                 </Router>
                 {error ? (

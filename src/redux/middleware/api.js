@@ -61,7 +61,7 @@ export const FETCH_DATA = 'FETCH DATA'
 export default store => next => action => {
     // 判断给action是否需要该中间件处理
     const callAPI = action[FETCH_DATA]
-    
+
     if (typeof callAPI === 'undefined') {
         return next(action)
     }
